@@ -1,0 +1,22 @@
+net: "/home/aseem/harit_stuff/Aseem/prototxt/flownet/fnet_train_val.prototxt"
+#test_iter: 100
+#test_interval: 5000
+base_lr: 0.0001
+
+lr_policy: "step"
+gamma: 0.5
+
+stepsize: 30000
+
+momentum: 0.9
+
+weight_decay: 0.0004
+max_iter:  1200000
+snapshot: 5000
+snapshot_prefix: "/home/aseem/harit_stuff/Aseem/snapshots/flownet/flownet_step_e-4ssize30k"
+
+solver_mode: GPU  # Some of our layers only support GPU
+type: "Adam"
+momentum2: 0.999
+
+display: 50 
