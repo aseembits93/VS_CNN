@@ -1,0 +1,29 @@
+<Environment>
+  <bkgndcolor>1 1 1</bkgndcolor>
+ <KinBody name="room1" file="room1_wrl_v4/ESCRITORIO+02_v4.wrl">
+    
+    <Translation> 8 35 85</Translation>
+    <RotationAxis> 1 0 0 180</RotationAxis>   	   
+    <RotationAxis> 0 0 1 0</RotationAxis>
+  </KinBody>
+
+ <Robot name="3DOFRobot" file="tridof2.robot.xml">
+  
+	 <Translation> 0 0 0</Translation>
+	
+	<AttachedSensor name="camera">
+      		<link>Arm0</link>
+		<translation>0 0 0</translation>
+		<rotationaxis>0 0 1 0</rotationaxis>      		
+		<rotationaxis>0 1 0 0</rotationaxis>
+		
+		<KK>2000 2000 320 240</KK>
+        	<width>640</width>
+        	<height>480</height>
+        	<framerate>5</framerate>
+      		<sensor file="camera.sensor.xml">
+      		</sensor>
+	</AttachedSensor>
+  </Robot>
+
+</Environment>
